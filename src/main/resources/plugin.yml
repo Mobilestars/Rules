@@ -1,0 +1,14 @@
+name: Rules
+version: '1.0.0'
+main: de.scholle.rules.Rules
+api-version: '1.18'
+prefix: Rules
+load: STARTUP
+authors: [ Mobilestars ]
+description: A simple Minecraft plugin to display and edit server rules.
+website: https://modrinth.com/project/rules-plugin
+
+commands:
+  rules:
+    description: Displays the server rules.
+    usage: /rules
