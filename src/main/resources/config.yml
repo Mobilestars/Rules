@@ -1,0 +1,17 @@
+# Prefix vor der Nachricht
+prefix: "§aServer Rules:§r "
+
+# Farbe / Formatierung des Regeltexts
+rules-color: "§f"
+
+# Wenn true -> Regeln sind eine Liste (mehrzeilig)
+rules-as-list: true
+
+# Permission für /rules (leer lassen = jeder darf)
+permission: ""
+
+# Nur Spieler erlauben?
+players-only: false
+
+# Wenn true -> Regeln aus rules.yml laden
+use-rules-yml: true

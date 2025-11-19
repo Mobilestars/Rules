@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class RulesManager {
 
@@ -26,12 +27,16 @@ public class RulesManager {
         rulesConfig = YamlConfiguration.loadConfiguration(rulesFile);
     }
 
-    public String getRulesText() {
+    public List<String> getRulesList() {
+        return rulesConfig.getStringList("rules");
+    }
+
+    public String getRulesString() {
         return rulesConfig.getString("rules", "There are no rules set yet.");
     }
 
-    public void setRulesText(String text) {
-        rulesConfig.set("rules", text);
+    public void setRules(Object rules) {
+        rulesConfig.set("rules", rules);
         saveRules();
     }
 

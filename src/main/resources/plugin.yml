@@ -12,3 +12,9 @@ commands:
   rules:
     description: Displays the server rules.
     usage: /rules
+    permission: rules.use
+
+permissions:
+  rules.use:
+    description: Allows the user to execute /rules
+    default: true
