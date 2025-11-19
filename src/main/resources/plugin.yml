@@ -1,5 +1,5 @@
 name: Rules
-version: '1.0.0'
+version: '1.0.1'
 main: de.scholle.rules.Rules
 api-version: '1.18'
 prefix: Rules
